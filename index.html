@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Html5-placeholder : Crossbrowser html5 placeholder" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Html5-placeholder</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/praveenvijayan/html5-placeholder">View on GitHub</a>
+
+          <h1 id="project_title">Html5-placeholder</h1>
+          <h2 id="project_tagline">Crossbrowser html5 placeholder</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/praveenvijayan/html5-placeholder/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/praveenvijayan/html5-placeholder/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Cross browser HTML5 Placeholder</h3>
+
+        <p>HTML5 input placeholder attribute are text stayinside an input or textbox as long as the it get the focus.</p>
+  
+         <h3>Browser support</h3>
+
+        
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Html5-placeholder maintained by <a href="https://github.com/praveenvijayan">praveenvijayan</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="demo/jquery.html5-placeholder.min.js"></script>
+  <script>
+    $(function(){
+      $('body').placeholder();
+
+      var ajax = $.ajax("https://raw.github.com/Fyrd/caniuse/master/features-json/input-placeholder.json");
+      ajax.success(function(data){
+        console.log(data)
+      });
+    })
+  </script>
+  </body>
+</html>
